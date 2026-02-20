@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Project Manager Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+<div class="sidebar">
+<h2>📊 Project Manager</h2>
+<button onclick="showDashboard()">Dashboard</button>
+<button onclick="showProjects()">Projects</button>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+<div id="dashboardView">
+<h2>Overview</h2>
+<div class="stats">
+<div class="card"><h3 id="totalProjects">0</h3><p>Total Projects</p></div>
+<div class="card"><h3 id="totalTasks">0</h3><p>Total Tasks</p></div>
+<div class="card"><h3 id="completedTasks">0</h3><p>Completed Tasks</p></div>
+</div>
+</div>
+
+<div id="projectsView" style="display:none;">
+
+<h2>Projects</h2>
+
+<div class="add-project">
+<input type="text" id="projectName" placeholder="New Project Name">
+<button onclick="addProject()">Add Project</button>
+</div>
+
+<div id="projectsContainer"></div>
+
+</div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
